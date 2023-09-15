@@ -1,0 +1,4 @@
+Codigo en c++ de una función que recibe una secuencia de votos (escrutinio), en donde la primer posición es la cantidad de votos que recibió el primer candidato y asi sucesivamente, y un conjunto de migraciones de voto, en donde el primer elemento son las migraciones que tuvieron los votos del primer candidato hacia otros candidatos, y asi sucesivamente.
+Ejemplo: si escrutinio = {1000, 500, 0} y migraciones = {{95,4,1},{0,100,0,},{40, 40, 20}} devuelve elecciones = {950,40,10}.
+Esto significa que el candidato 1 tuvo  1000 votos, el segundo y tercero cero votos, y que en las proximas elecciones el candidato 1 tendrá 95% de sus votos pero perdera un 5% , 4% se van al candidato 2 y 1% al candidato 3. Entonces el candidato 1 tendrá 95% de votos del candidato 1 (950 votos) + 0% del segundo (0 votos) + 40% del tercero (0 votos).
+El candidato 2 recibe el 4% de votos del primer candidato (40 votos) + 100% de sus votos (500 votos) + 40% del tercero (0 votos).
